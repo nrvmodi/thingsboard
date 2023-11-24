@@ -67,7 +67,7 @@ public class CustomerUserPermissions extends AbstractPermissions {
     private static final PermissionChecker customerEntityPermissionChecker =
             new PermissionChecker.GenericPermissionChecker(Operation.READ, Operation.READ_CREDENTIALS,
                     Operation.READ_ATTRIBUTES, Operation.READ_TELEMETRY, Operation.RPC_CALL, Operation.CLAIM_DEVICES,
-                    Operation.WRITE, Operation.WRITE_ATTRIBUTES, Operation.WRITE_TELEMETRY) {
+                    Operation.WRITE, Operation.CREATE, Operation.WRITE_ATTRIBUTES, Operation.WRITE_TELEMETRY) {
 
                 @Override
                 @SuppressWarnings("unchecked")
